@@ -4,18 +4,20 @@
       <meta charset="UTF-8" />
       <meta http-equiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-      <titleFCC: Survey Form</title>
+      <title>FCC: Survey Form</title>
       <link rel="shortcut icon" href="https://battleoil.github.io/images/icon/favicon.png">
     </head>
   
     <body>
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-      <h1>Demo Survey Form</h1>
-      <p>Thank you for taking the time to help us improve the platform</p>
+      <h1 id="title">Demo Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
       <div>
           <form id="survey-form" action="">
-              <label for="name">Name<br><input type="text" id="name" placeholder="Enter your name" required></label>
-              <label for="email">Email<br><input type="email" id="email" placeholder="Enter your email" required></label>
+              <div><label id="name-label" for="name">Name<br><input type="text" id="name" placeholder="Enter your name" required></label></div>
+              <div><label id="email-label" for="email">Email<br><input type="email" id="email" placeholder="Enter your email" required></label></div>
+              <div><label id="number-label" for="age">Age(optional)<br><input type="number" id="number" min="10" max="100" placeholder="Enter your age"></label></div>
+              
           </form>
       </div>
     </body>
