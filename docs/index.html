@@ -6,6 +6,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       <title>FCC: Survey Form</title>
       <link rel="shortcut icon" href="https://battleoil.github.io/images/icon/favicon.png">
+        <style>
+            body{
+                font-size:16px;
+                font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif,Microsoft YaHei UI;
+                background:url(https://images.unsplash.com/photo-1571607050173-323d37e16af4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) center cover;
+            }
+            body:after{
+                content:"";
+                filter:blur(5px);
+            }
+            #survey-form{
+                width:800px;
+                color:rgba(0,0,0,0.5);
+            }
+        </style>
     </head>
   
     <body>
@@ -20,7 +35,7 @@
               <div><label for="sys">Which operating system are you using?<br><select id="dropdown" required><option value="null" disable selected>Select current system</option><option value="Windows">Windows</option><option value="Mac">Mac OS</option><option value="Linux">Linux</option></select></label></div> 
               <div><p>Is this website readable?</p><label for="yes"><input type="radio" name="readable" value="Yes">Yes</label><br><label for="Maybe"><input type="radio" name="readable" value="Maybe">Maybe</label><br><label for="No"><input type="radio" name="readable" value="No">No</label></div>          
               <div><p>Which part you like on my blog?</p><label><input id="checkbox" type="checkbox" value="Blog">Blog</label><br ><label><input id="checkbox" type="checkbox" value="Video">Video</label><br ><label><input id="checkbox" type="checkbox" value="Music">Music</label></div>
-              <div><p>Leave you comment below</p><textarea rows="20"></textarea></div>
+              <div><p>Leave you comment below</p><textarea id="comments" name="commont" placeholder="Enter your comment here..."></textarea></div>
               <div><button id="submit" type="submit">Submit</button></div>
           </form>
       </div>
